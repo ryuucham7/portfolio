@@ -12,7 +12,7 @@
   }
 
   @Component
-  export default class KayVisual extends Vue {
+  export default class KeyVisual extends Vue {
     @Prop({ type: String, required: false }) readonly message!: String
 
     // get fullName (): string {

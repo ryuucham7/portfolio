@@ -25,11 +25,11 @@ const config: Configuration = {
   /*
    ** Global CSS
    */
-  css: [],
-  styleResources: {
-    scss: [
-      '@/assets/scss/_variables.scss'
-    ],
+  css: ['@/assets/scss/_variables.scss'],
+  webfontloader: {
+    google: {
+      families: ['Noto+Serif', 'Muli', 'Sawarabi+Mincho']
+    }
   },
   /*
    ** Plugins to load before mounting the App
@@ -49,7 +49,8 @@ const config: Configuration = {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    'nuxt-webfontloader'
   ],
   /*
    ** Axios module configuration

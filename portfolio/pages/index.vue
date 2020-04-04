@@ -1,26 +1,9 @@
 <template>
   <div class="">
     <key-visual/>
-    <div>
-      <logo :user="test" :message="'ハロー'"/>
-      <h1 class="title">
-        portfolio
-      </h1>
-      <h2 class="subtitle">
-        My badass Nuxt.js project
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          Test
-        </a>
-      </div>
+    <div class="container-base">
+      <history/>
+      <skill-set class="mt-24"/>
     </div>
   </div>
 </template>
@@ -29,11 +12,15 @@
   import { Vue, Component, Provide } from 'vue-property-decorator'
   import Logo from '~/components/Logo.vue'
   import KeyVisual from '~/components/KeyVisual.vue'
+  import History from '~/components/section/History.vue'
+  import SkillSet from '~/components/section/SkillSet.vue'
 
   @Component({
     components: {
       Logo,
-      KeyVisual
+      KeyVisual,
+      History,
+      SkillSet
     }
   })
   export default class IndexPage extends Vue {
