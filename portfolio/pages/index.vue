@@ -3,7 +3,7 @@
     <key-visual/>
     <div class="container-base">
       <history id="history" class="mt-128 pb-128"/>
-      <skill-set id="skills" class="mt-128 pb-128"/>
+      <no-ssr><skill-set id="skills" class="mt-128 pb-128"/></no-ssr>
       <works id="works" class="mt-128 pb-256"/>
       <contact id="contacts" class="mt-128 pt-128 pb-256"/>
     </div>
@@ -44,6 +44,7 @@
     position: number = 0;
 
     mounted() {
+      if (!process.browser) return
       const options = {
         threshold: [0.15, 1.0]
       }
@@ -52,7 +53,6 @@
       // 監視したい要素をobserveする。
       observer.observe(target)
 
-      if (!process.browser) return
       this.$nextTick(() => {
         window.addEventListener("scroll", this.handleScroll)
       })
