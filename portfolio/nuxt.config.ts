@@ -15,8 +15,7 @@ const config: Configuration = {
         name: 'description',
         content: process.env.npm_package_description || ''
       }
-    ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -25,16 +24,24 @@ const config: Configuration = {
   /*
    ** Global CSS
    */
-  css: ['@/assets/scss/_variables.scss'],
+  css: [
+    '@fortawesome/fontawesome-svg-core/styles.css',
+    '@/assets/scss/_variables.scss'
+  ],
   webfontloader: {
     google: {
-      families: ['Noto+Serif', 'Muli', 'Sawarabi+Mincho']
+      families: ['Noto+Serif', 'Muli', 'Sawarabi+Mincho', 'Oswald']
     }
   },
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    { src: '~/plugins/parallax.js', ssr: false },
+    { src: '~/plugins/doughnut-chart.js', ssr: false },
+    '~/plugins/scroll.js',
+    '~/plugins/fontawesome'
+  ],
   /*
    ** Nuxt.js dev-modules
    */
