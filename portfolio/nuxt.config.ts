@@ -37,7 +37,6 @@ const config: Configuration = {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    { src: '~/plugins/parallax.js', ssr: false },
     { src: '~/plugins/doughnut-chart.js', ssr: false },
     '~/plugins/scroll.js',
     '~/plugins/fontawesome'
