@@ -38,7 +38,7 @@ const config: Configuration = {
    */
   plugins: [
     { src: '~/plugins/doughnut-chart.js', ssr: false },
-    '~/plugins/scroll.js',
+    { src: '~/plugins/scroll.js', ssr: false },
     '~/plugins/fontawesome'
   ],
   /*

@@ -8,7 +8,7 @@
       <contact id="contacts" class="mt-128 pt-128 pb-256"/>
     </div>
     <div id="page-top"
-      v-if="position > 500">
+      v-show="position > 500">
       <nuxt-link class="button has-background-white is-circle"
         v-scroll-to="'body'"
         to
