@@ -43,6 +43,18 @@
     test: Object = { firstName: "Ryuta", lastName: 1 } //dataの記法　ここでも型付け（ここでいうとstring）が行える
     position: number = 0;
 
+    head () {
+      return {
+        meta: [
+          { property: 'og:title', content: "Ryuucham Simple Portfolio" },
+          { property: 'og:description', content: "This site is a simple portfolio. If you have any question or request, feel free to contact me" },
+          { property: 'og:image', content: require('@/assets/img_black_desk.jpg') },
+          { property: 'og:type', content: 'article' },
+          { property: 'og:url', content: 'https://ryuucham.com/' },
+          { name: 'twitter:card', content: 'summary' }
+        ]
+      }
+    }
     mounted() {
       if (!process.browser) return
       const options = {
