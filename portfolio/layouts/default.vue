@@ -26,8 +26,8 @@ html {
 }
 
 body {
-    overflow-y: scroll;
-    overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 *,
@@ -68,6 +68,10 @@ body {
   color: #FF7F50 !important;
 }
 
+.has-text-green {
+  color: #12AF9A !important;
+}
+
 /* Font */
 .has-font-noto-serif {
   font-family: 'Noto Serif', sans-serif;
@@ -83,6 +87,10 @@ body {
 
 .has-font-mincho {
   font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.has-text-underline {
+  text-decoration: underline !important;
 }
 
 /* Margin */
@@ -121,14 +129,36 @@ body {
   margin-bottom: 16rem;
 }
 
+@media (min-width: 768px){
+  .mb-64-pc {
+    margin-bottom: 4rem;
+  }
+  .mb-128-pc {
+    margin-bottom: 8rem;
+  }
+  .mb-256-pc {
+    margin-bottom: 16rem;
+  }
+}
+
 .mr-8 {
   margin-right: 0.5rem;
+}
+.mr-12 {
+  margin-right: 0.75rem;
 }
 .mr-16 {
   margin-right: 1rem;
 }
 
 /* Padidng */
+.pl-16 {
+  padding-left: 1rem;
+}
+.pr-16 {
+  padding-right: 1rem;
+}
+
 .pd-8 {
   padding: 0.5rem;
 }

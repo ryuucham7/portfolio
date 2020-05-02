@@ -44,7 +44,10 @@ const config: Configuration = {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ['@nuxt/typescript-build'],
+  buildModules: ['@nuxt/typescript-build', '@nuxtjs/google-analytics'],
+  googleAnalytics: {
+    id: 'UA-165323333-1'
+  },
   /*
    ** Nuxt.js modules
    */

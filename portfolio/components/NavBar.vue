@@ -53,7 +53,6 @@
     isActiveMenu: boolean = false
 
     clickMenu() {
-      console.log(this.isActiveMenu)
       this.isActiveMenu = !this.isActiveMenu
     }
   }
@@ -70,5 +69,9 @@
 
 .navbar-item {
   padding: 0.75rem 1.5rem;
+}
+
+.navbar-menu {
+  background-color: black;
 }
 </style>

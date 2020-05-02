@@ -10,17 +10,14 @@
             <img class="is-rounded" src="@/assets/img_profile_temp.jpg">
           </figure>
         </div>
-        <div class="column is-half has-text-font-muli has-text-white history">
-          <p class="is-size-6-mobile is-size-5">
-            大阪府出身、学生時代はプログラミングやITの世界とは無縁でひたすらバスケに熱中。
-            立命館大学国際関係学部にて国際経済および金融などを学び、University of British Columbiaへ留学。
+        <div class="column is-half has-font-muli has-text-white history">
+          <p class="mt-16 is-size-5">
+            大学卒業後、約4年半BtoBの就業管理システム開発経験を経て2015年10月より株式会社奇兵隊に参画。
             <br>
-            <br>
-            大学卒業後、4年半BtoBの就業管理システム開発経験を経て2015年10月より株式会社奇兵隊に参画。
-            <br>
-            主にAndroid、RailsエンジニアとしてAirtrippアプリの開発を担当した後、
-            2017年よりCTOとして取締役に就任。
-            現在は現場であらゆるコードを書きつつ、エンジニアチームビルディングに勤しむ。
+            主にAndroid、Railsエンジニアとして<a class="has-text-orange has-text-weight-bold" href="https://airtripp.page.link/home" target="_blank">Airtripp</a>アプリの開発を担当した後、
+            2017年より取締役CTOに就任。
+            <br><br>
+            現在は世界中のユーザー利用するラウドファンディングサービス <a class="has-text-green has-text-weight-bold" :href="'https://www.airfunding.net?' + trackingParams('ryuucham', 'referral', 'portfolio')" target="_blank">Airfunding</a>のグロースをメインで担当しつつ、エンジニアチームビルディングに勤しむ。
           </p>
         </div>
       </div>
@@ -39,9 +36,16 @@
   export default class History extends Vue {
     @Prop({ type: String, required: false }) readonly message!: String
 
-    // get fullName (): string {
-    //   return `${this.user.firstName} ${this.user.lastName}`
-    // }
+    trackingParams(utmSource: string, utmMedium: string, utmCampaign: string, utmContent: string) {
+      var params
+      params = 'utm_source=' + encodeURIComponent(utmSource)
+      params += '&utm_medium=' + encodeURIComponent(utmMedium)
+      params += '&utm_campaign=' + encodeURIComponent(utmCampaign)
+      if (utmContent) {
+        params += '&utm_content=' + encodeURIComponent(utmContent)
+      }
+      return params
+    }
   }
 </script>
 

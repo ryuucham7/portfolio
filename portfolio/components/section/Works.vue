@@ -1,12 +1,9 @@
 <template>
-  <div class="container-section fadein">
+  <div class="container-section fadein pl-16 pr-16">
     <div class="contents has-text-centered">
       <h2 class="subtitle has-font-noto-serif has-text-orange">
         Works
       </h2>
-      <p class="has-text-white is-size-5">
-        メインで開発に参画したもののみ
-      </p>
       <div class="columns">
         <div class="column is-half has-text-left mt-64">
           <img class="mr-16" src="@/assets/img_airtripp.png" height="64" width="200">
@@ -41,26 +38,46 @@ Create a project to collect funds to achieve dreams or help others, or look for 
       </div>
 
       <div class="has-text-left mt-128">
-        <p class="has-text-white mt-40 is-size-5">
+        <p class="is-size-3 has-font-noto-serif has-text-centered has-text-white">Sub works</p>
+        <p class="has-text-white mt-40 is-size-4">
           某大手通信会社の配車系Webアプリ開発
         </p>
-        <p class="mt-40 has-text-white">
+        <p class="mt-40 has-text-white is-size-5">
           Android、iOS、Webアプリ開発
           <br>期間:
           約半年
           <br>利用技術:
           vue.js(quasar framework), Androd java, swift, google cloud functions, go, firebase
         </p>
-        <p class="has-text-white mt-128 is-size-5">
+        <p class="has-text-white mt-128 is-size-4">
           某大手銀行の人事教育系アプリ＆ポイントシステムアプリ開発
         </p>
-        <p class="has-text-white mt-40">
+        <p class="has-text-white mt-40 is-size-5">
           Android, iOSアプリ開発
           <br>期間:
           約9ヶ月
           <br>利用技術:
           kotlin, swift, firebase
         </p>
+      </div>
+
+      <div class="has-text-white mt-128">
+        <p class="is-size-3 has-font-noto-serif mb-64-pc">Others</p>
+        <div class="columns">
+          <div class="column is-half has-text-left mt-16">
+            <p class="has-text-white mt-40 is-size-5">
+              <a class="has-text-white has-text-weight-bold is-size-4" href="https://menta.work/plan/982" target="_brank">MENTA</a>というプログラミング学習支援サービスでメンターもやっています。
+              <br>
+              複数プラン用意していますので、もし気になったら一度メッセージしてください。
+              SNSからの連絡でも問題ありません！
+            </p>
+          </div>
+          <div class="column is-half mt-8">
+            <a href="https://menta.work/plan/982">
+              <img class="mr-16" src="@/assets/img_sample_menta.png" width="525" height="332">
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -86,7 +103,7 @@ Create a project to collect funds to achieve dreams or help others, or look for 
 }
 
 .movie-airtripp {
-  width: 382px;
+  width: 350px;
   height: 224px;
 }
 @media (min-width: 768px){

@@ -14,7 +14,7 @@
           <img src="@/assets/img_swift.png" height="64" width="64">
         </div>
         <div class="skill-box column">
-          <span class="box-title is-size-4">Front-End</span>
+          <span class="box-title is-size-4">Front End</span>
           <img class="mr-16" src="@/assets/img_html.png" height="64" width="64">
           <img class="mr-16" src="@/assets/img_css.png" height="64" width="64">
           <img class="mr-16" src="@/assets/img_vue.png" height="64" width="64">
@@ -23,7 +23,7 @@
           <img src="@/assets/img_ts.png" height="64" width="64">
         </div>
         <div class="skill-box column">
-          <span class="box-title is-size-4">Back-End etc..</span>
+          <span class="box-title is-size-4">Back End etc..</span>
           <img class="mr-16" src="@/assets/img_java.png" height="64" width="64">
           <img class="backend-img" src="@/assets/img_rails.png">
           <img class="mr-16" src="@/assets/img_gcp.png" height="64" width="64">
@@ -34,7 +34,7 @@
       </div>
 
       <!-- Mobile Native -->
-      <h3 class="has-font-noto-serif has-text-white has-text-centered is-size-4 is-size-5-mobile mt-64">
+      <h3 class="has-font-noto-serif has-text-white has-text-centered is-size-3 is-size-4-mobile mt-64">
         Native Mobile App
       </h3>
       <div class="columns is-centered is-mobile is-multiline mt-64">
@@ -48,8 +48,8 @@
             :auto-adjust-text-size="true">
             <span class="is-size-5 has-text-white has-text-weight-bold">80%</span>
           </vc-donut>
-          <p class="container-language has-text-centered has-text-white mt-16">
-            <img class="mr-8" src="@/assets/img_android_java.png" height="24" width="24">
+          <p class="container-language has-text-centered has-text-white mt-16 is-size-5">
+            <img class="mr-12" src="@/assets/img_android_java.png" height="24" width="24">
             Android Java
           </p>
         </div>
@@ -63,8 +63,8 @@
             :auto-adjust-text-size="true">
             <span class="is-size-5 has-text-white has-text-weight-bold">60%</span>
           </vc-donut>
-          <p class="container-language has-text-centered has-text-white mt-16">
-            <img class="mr-8" src="@/assets/img_kotlin.png" height="24" width="24">
+          <p class="container-language has-text-centered has-text-white mt-16 is-size-5">
+            <img class="mr-12" src="@/assets/img_kotlin.png" height="24" width="24">
             Kotlin
           </p>
         </div>
@@ -78,18 +78,33 @@
             :auto-adjust-text-size="true">
             <span class="is-size-5 has-text-white has-text-weight-bold">70%</span>
           </vc-donut>
-          <p class="container-language has-text-centered has-text-white mt-16">
-            <img class="mr-8" src="@/assets/img_swift.png" height="24" width="24">
+          <p class="container-language has-text-centered has-text-white mt-16 is-size-5">
+            <img class="mr-12" src="@/assets/img_swift.png" height="24" width="24">
             Swift
           </p>
         </div>
       </div>
 
       <!-- Front End -->
-      <h3 class="has-font-noto-serif has-text-white has-text-centered is-size-4 is-size-5-mobile mt-128">
+      <h3 class="has-font-noto-serif has-text-white has-text-centered is-size-3 is-size-4-mobile mt-128">
         Front End
       </h3>
       <div class="columns is-centered is-mobile is-multiline mt-64">
+        <div class="column is-6-mobile is-4-desktop is-4-tablet has-text-centered">
+          <vc-donut
+            foreground="grey"
+            background="#222021"
+            :size="150"
+            :thickness="30"
+            :sections="[{ label: '', value: 90, color: '#FF7F50' }]"
+            :auto-adjust-text-size="true">
+            <span class="is-size-5 has-text-white has-text-weight-bold">90%</span>
+          </vc-donut>
+          <p class="container-language has-text-centered has-text-white mt-16 is-size-5">
+            <img class="mr-12" src="@/assets/img_html.png" height="24" width="24">
+            HTML5
+          </p>
+        </div>
         <div class="column is-6-mobile is-4-desktop is-4-tablet has-text-centered">
           <vc-donut
             foreground="grey"
@@ -100,23 +115,8 @@
             :auto-adjust-text-size="true">
             <span class="is-size-5 has-text-white has-text-weight-bold">80%</span>
           </vc-donut>
-          <p class="container-language has-text-centered has-text-white mt-16">
-            <img class="mr-8" src="@/assets/img_html.png" height="24" width="24">
-            HTML5
-          </p>
-        </div>
-        <div class="column is-6-mobile is-4-desktop is-4-tablet has-text-centered">
-          <vc-donut
-            foreground="grey"
-            background="#222021"
-            :size="150"
-            :thickness="30"
-            :sections="[{ label: '', value: 60, color: '#FF7F50' }]"
-            :auto-adjust-text-size="true">
-            <span class="is-size-5 has-text-white has-text-weight-bold">60%</span>
-          </vc-donut>
-          <p class="container-language has-text-centered has-text-white mt-16">
-            <img class="mr-8" src="@/assets/img_css.png" height="24" width="24">
+          <p class="container-language has-text-centered has-text-white mt-16 is-size-5">
+            <img class="mr-12" src="@/assets/img_css.png" height="24" width="24">
             CSS3
           </p>
         </div>
@@ -126,12 +126,12 @@
             background="#222021"
             :size="150"
             :thickness="30"
-            :sections="[{ label: '', value: 70, color: '#FF7F50' }]"
+            :sections="[{ label: '', value: 90, color: '#FF7F50' }]"
             :auto-adjust-text-size="true">
-            <span class="is-size-5 has-text-white has-text-weight-bold">70%</span>
+            <span class="is-size-5 has-text-white has-text-weight-bold">90%</span>
           </vc-donut>
-          <p class="container-language has-text-centered has-text-white mt-16">
-            <img class="mr-8" src="@/assets/img_vue.png" height="24" width="24">
+          <p class="container-language has-text-centered has-text-white mt-16 is-size-5">
+            <img class="mr-12" src="@/assets/img_vue.png" height="24" width="24">
             Vue.js
           </p>
         </div>
@@ -141,12 +141,12 @@
             background="#222021"
             :size="150"
             :thickness="30"
-            :sections="[{ label: '', value: 70, color: '#FF7F50' }]"
+            :sections="[{ label: '', value: 90, color: '#FF7F50' }]"
             :auto-adjust-text-size="true">
-            <span class="is-size-5 has-text-white has-text-weight-bold">70%</span>
+            <span class="is-size-5 has-text-white has-text-weight-bold">90%</span>
           </vc-donut>
-          <p class="container-language has-text-centered has-text-white mt-16">
-            <img class="mr-8" src="@/assets/img_nuxt.png" height="24" width="24">
+          <p class="container-language has-text-centered has-text-white mt-16 is-size-5">
+            <img class="mr-12" src="@/assets/img_nuxt.png" height="24" width="24">
             Nuxt.js
           </p>
         </div>
@@ -160,8 +160,8 @@
             :auto-adjust-text-size="true">
             <span class="is-size-5 has-text-white has-text-weight-bold">70%</span>
           </vc-donut>
-          <p class="container-language has-text-centered has-text-white mt-16">
-            <img class="mr-8" src="@/assets/img_ts.png" height="24" width="24">
+          <p class="container-language has-text-centered has-text-white mt-16 is-size-5">
+            <img class="mr-12" src="@/assets/img_ts.png" height="24" width="24">
             TypeScript
           </p>
         </div>
@@ -171,19 +171,19 @@
             background="#222021"
             :size="150"
             :thickness="30"
-            :sections="[{ label: '', value: 70, color: '#FF7F50' }]"
+            :sections="[{ label: '', value: 50, color: '#FF7F50' }]"
             :auto-adjust-text-size="true">
-            <span class="is-size-5 has-text-white has-text-weight-bold">70%</span>
+            <span class="is-size-5 has-text-white has-text-weight-bold">50%</span>
           </vc-donut>
-          <p class="container-language has-text-centered has-text-white mt-16">
-            <img class="mr-8" src="@/assets/img_react.png" height="24" width="24">
+          <p class="container-language has-text-centered has-text-white mt-16 is-size-5">
+            <img class="mr-12" src="@/assets/img_react.png" height="24" width="24">
             React.js
           </p>
         </div>
       </div>
 
       <!-- Back End & Infra -->
-      <h3 class="has-font-noto-serif has-text-white has-text-centered is-size-4 is-size-5-mobile mt-128">
+      <h3 class="has-font-noto-serif has-text-white has-text-centered is-size-3 is-size-4-mobile mt-128">
         {{ "Back End & Infra etc" }}
       </h3>
       <div class="columns is-centered is-mobile is-multiline mt-64">
@@ -197,8 +197,8 @@
             :auto-adjust-text-size="true">
             <span class="is-size-5 has-text-white has-text-weight-bold">80%</span>
           </vc-donut>
-          <p class="container-language has-text-centered has-text-white mt-16">
-            <img class="mr-8" src="@/assets/img_java.png" height="24" width="24">
+          <p class="container-language has-text-centered has-text-white mt-16 is-size-5">
+            <img class="mr-12" src="@/assets/img_java.png" height="24" width="24">
             Java
           </p>
         </div>
@@ -212,7 +212,7 @@
             :auto-adjust-text-size="true">
             <span class="is-size-5 has-text-white has-text-weight-bold">80%</span>
           </vc-donut>
-          <p class="container-language has-text-centered has-text-white mt-16">
+          <p class="container-language has-text-centered has-text-white mt-16 is-size-5">
             <img class="mr-8" src="@/assets/img_rails.png" height="96" width="64">
             Ruby on Rails
           </p>
@@ -223,12 +223,12 @@
             background="#222021"
             :size="150"
             :thickness="30"
-            :sections="[{ label: '', value: 80, color: '#FF7F50' }]"
+            :sections="[{ label: '', value: 70, color: '#FF7F50' }]"
             :auto-adjust-text-size="true">
-            <span class="is-size-5 has-text-white has-text-weight-bold">80%</span>
+            <span class="is-size-5 has-text-white has-text-weight-bold">70%</span>
           </vc-donut>
-          <p class="container-language has-text-centered has-text-white mt-16">
-            <img class="mr-8" src="@/assets/img_gcp.png" height="24" width="24">
+          <p class="container-language has-text-centered has-text-white mt-16 is-size-5">
+            <img class="mr-12" src="@/assets/img_gcp.png" height="24" width="24">
             GCP
           </p>
         </div>
@@ -238,12 +238,12 @@
             background="#222021"
             :size="150"
             :thickness="30"
-            :sections="[{ label: '', value: 80, color: '#FF7F50' }]"
+            :sections="[{ label: '', value: 60, color: '#FF7F50' }]"
             :auto-adjust-text-size="true">
-            <span class="is-size-5 has-text-white has-text-weight-bold">80%</span>
+            <span class="is-size-5 has-text-white has-text-weight-bold">60%</span>
           </vc-donut>
-          <p class="container-language has-text-centered has-text-white mt-16">
-            <img class="mr-8" src="@/assets/img_aws.png" height="24" width="24">
+          <p class="container-language has-text-centered has-text-white mt-16 is-size-5">
+            <img class="mr-12" src="@/assets/img_aws.png" height="24" width="24">
             AWS
           </p>
         </div>
@@ -253,12 +253,12 @@
             background="#222021"
             :size="150"
             :thickness="30"
-            :sections="[{ label: '', value: 80, color: '#FF7F50' }]"
+            :sections="[{ label: '', value: 70, color: '#FF7F50' }]"
             :auto-adjust-text-size="true">
-            <span class="is-size-5 has-text-white has-text-weight-bold">80%</span>
+            <span class="is-size-5 has-text-white has-text-weight-bold">70%</span>
           </vc-donut>
-          <p class="container-language has-text-centered has-text-white mt-16">
-            <img class="mr-8" src="@/assets/img_firebase.png" height="24" width="24">
+          <p class="container-language has-text-centered has-text-white mt-16 is-size-5">
+            <img class="mr-12" src="@/assets/img_firebase.png" height="24" width="24">
             Firebase
           </p>
         </div>
@@ -272,8 +272,8 @@
             :auto-adjust-text-size="true">
             <span class="is-size-5 has-text-white has-text-weight-bold">80%</span>
           </vc-donut>
-          <p class="container-language has-text-centered has-text-white mt-16">
-            <img class="mr-8" src="@/assets/img_mysql.png" height="24" width="24">
+          <p class="container-language has-text-centered has-text-white mt-16 is-size-5">
+            <img class="mr-12" src="@/assets/img_mysql.png" height="24" width="24">
             My SQL
           </p>
         </div>

@@ -4,7 +4,7 @@
     <div class="container-base">
       <history id="history" class="mt-128 pb-128"/>
       <no-ssr><skill-set id="skills" class="mt-128 pb-128"/></no-ssr>
-      <works id="works" class="mt-128 pb-256"/>
+      <works id="works" class="mt-128 pb-128"/>
       <contact id="contacts" class="mt-128 pt-128 pb-256"/>
     </div>
     <div id="page-top"

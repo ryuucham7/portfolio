@@ -2,8 +2,8 @@
   <div class="trim">
     <img class="image-top" src="@/assets/img_black_desk.jpg">
     <div class="has-text-white has-font-ozwald container-title mt-16 is-size-4-mobile">
-      <h1 class="is-size-4-mobile">RYUTA SATO</h1>
-      <p class="is-size-5-mobile is-size-3">
+      <h1 class="is-size-3-mobile">RYUTA SATO</h1>
+      <p class="is-size-4-mobile is-size-3">
         {{ "Director CTO & Engineer" }}
       </p>
       <br>
@@ -21,10 +21,6 @@
   @Component
   export default class KeyVisual extends Vue {
     @Prop({ type: String, required: false }) readonly message!: String
-
-    // get fullName (): string {
-    //   return `${this.user.firstName} ${this.user.lastName}`
-    // }
   }
 </script>
 
@@ -51,10 +47,10 @@
 .container-title {
   position: absolute;
   top: 140px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  text-align: center;
+  left: 40px;
+  right: 20px;
+  margin: 20px !important;
+  text-align: right;
 }
 
 .under {
