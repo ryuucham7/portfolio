@@ -14,6 +14,11 @@ const config: Configuration = {
         hid: 'description',
         name: 'description',
         content: process.env.npm_package_description || ''
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://ryuucham.com/_nuxt/img/1aedb0e.jpg'
       }
     ]
   },
