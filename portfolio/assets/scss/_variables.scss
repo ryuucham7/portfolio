@@ -1,3 +1,52 @@
 // Common
 $base-width: 1080px;
-$pc-min-width: 768px;
+$pc-min-width: 769px;
+$pc-section-contents-max-width: 880px;
+$standard-sheet-width: 920px;
+$input-sheet-width: 450px;
+$common-sheet-width: 610px;
+
+$header-height: 60px;
+$header-height-pc: 80px;
+
+$form-item-height: 3em;
+
+// Color
+$default-text-color: #4a4a4a;
+$grey50: #fafafa;
+$grey300: #e0e0e0;
+$greyE6: #e6e6e6;
+$grey600: #757575;
+
+
+//!!Deprecated!! Fontsize should be set `rem`
+// Font Size
+$font-size-12: 12px;
+$font-size-14: 14px;
+$font-size-16: 16px;
+$font-size-18: 18px;
+$font-size-20: 20px;
+$font-size-22: 22px;
+$font-size-24: 24px;
+
+// Radius
+$radius-2: 2px;
+$radius-4: 4px;
+$radius-6: 6px;
+$radius-8: 8px;
+$radius-12: 12px;
+$radius-16: 16px;
+$radius-24: 24px;
+$radius-32: 32px;
+
+// Border
+$border-1: 1px;
+$border-2: 2px;
+$border-4: 4px;
+
+// Z-index
+$modal-lay: 200;
+$header-lay: 100;
+$standard-upper-lay: 10;
+$no-static-lay: 1;
+$minus-lay: -1;

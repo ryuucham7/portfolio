@@ -36,7 +36,7 @@
       SkillSet,
       Works,
       Contact
-    }
+    },
   })
   export default class IndexPage extends Vue {
     @Provide()
@@ -90,6 +90,10 @@
 </script>
 
 <style>
+html {
+  background: black;
+}
+
 .container {
   margin: 0 auto;
   min-height: 100vh;

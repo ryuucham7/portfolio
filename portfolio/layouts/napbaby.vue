@@ -1,20 +1,17 @@
 <template>
   <div>
-    <nav-bar />
     <nuxt />
   </div>
 </template>
 
 <script lang="ts">
   import { Vue, Component, Provide } from 'vue-property-decorator'
-  import NavBar from '~/components/NavBar.vue'
 
   @Component({
     components: {
-      NavBar
     }
   })
-  export default class Default extends Vue {}
+  export default class Napbaby extends Vue {}
 </script>
 
 <style lang="scss">
@@ -22,6 +19,28 @@ html {
   font-family: 'Noto Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
   word-spacing: 1px;
+}
+
+.page-container{
+  max-width: 1080px;
+  margin: auto;
+
+  &.input-sheet {
+    padding: 1rem 1rem 3rem;
+
+    @media (min-width: 769px){
+      padding: 1rem 0 3rem;
+      max-width: 450px;
+    }
+  }
+  &.common-sheet {
+    padding: 1rem 1rem 3rem;
+
+    @media (min-width: 769px) {
+      padding: 4rem 0 3rem;
+      max-width: 610px;
+    }
+  }
 }
 
 body {

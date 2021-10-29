@@ -64,7 +64,22 @@ const config: Configuration = {
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
-    'nuxt-webfontloader'
+    'nuxt-webfontloader',
+    ['nuxt-i18n', {
+      locales: [
+        {
+          code: 'en',
+          file: 'en.js'
+        },
+        {
+          code: 'ja',
+          file: 'ja.js'
+        }
+      ],
+      lazy: true,
+      langDir: 'lang/',
+      defaultLocale: 'en'
+    }]
   ],
   /*
    ** Axios module configuration
@@ -75,6 +90,11 @@ const config: Configuration = {
   typescript: {
     typeCheck: true,
     ignoreNotFoundWarnings: true
+  },
+  styleResources: {
+    scss: [
+      '@/assets/scss/_variables.scss'
+    ],
   },
   /*
    ** Build configuration
